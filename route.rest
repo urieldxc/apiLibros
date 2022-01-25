@@ -1,0 +1,17 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/book-list
+
+###
+
+POST http://localhost:3000/new-book
+Content-Type: application/json
+
+{
+    "title": "Barcos sobre el mar",
+    "author": "Santiago Hernández",
+    "pages": "289",
+    "genere": "Action"
+}
