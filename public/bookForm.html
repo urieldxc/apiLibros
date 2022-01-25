@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Inserte un libro</h1>
-    <form action="/new-book" method="post" encType="multipart/form-data">
+    <form action="/new-book" method="POST">
 
         <div>
             <label for="iTitle">Title:</label>
@@ -21,7 +21,7 @@
         </div>
         <div>
             <label for="iPages">Pages:</label>
-            <input type="text" name="pages" id="iPages">
+            <input type="number" name="pages" id="iPages">
         </div>
         <div>
             <label for="iGenere">Genere:</label>

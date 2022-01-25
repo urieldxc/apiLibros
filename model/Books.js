@@ -1,18 +1,11 @@
+const res = require('express/lib/response');
 const mongoose = require('mongoose')
 
 const booksSchema = new mongoose.Schema({
-    title:{
-        type: String
-    },
-    author:{
-        type: String
-    },
-    pages:{
-        type: Number
-    },
-    genere:{
-        type: String
-    }
+    title:String,
+    author: String,
+    pages:Number,
+    genere: String
 })
 
 //TEST

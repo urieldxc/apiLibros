@@ -7,12 +7,10 @@ const bodyParser = require("body-parser")
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb+srv://urieldxc:mongo1234@cluster0.lglc8.mongodb.net/activa", ()=>{
+mongoose.connect(process.env.DB_URL, ()=>{
     console.log("Conectado a la BDD ;)")
 }, err => {console.log(err)})
-// mongoose.connect(process.env.DATABASE_URL, ()=>{
-//     console.log("Conectado a la BDD ;)")
-// }, err => {console.log(err)})
+//(process.env.DATABASE_URL
 app.use(
     express.urlencoded({ extended: true })
 );
