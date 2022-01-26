@@ -19,7 +19,7 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 app.use("/", router)
   
-mongoose.connect(process.env.DB_URL, ()=>{
+mongoose.connect("mongodb+srv://urieldxc:mongo1234@cluster0.lglc8.mongodb.net/activa", ()=>{
     console.log("Conectado a la BDD ;)")
 }, err => {console.log(err)})
 
