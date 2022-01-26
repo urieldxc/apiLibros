@@ -9,15 +9,21 @@ router.get("/", controller.landing)
 router.get("/book-list", controller.showAllBooks)
 
 //GET ONE
+router.get("/search-book", controller.getSearchBook)
+router.post("/search-book", controller.searchBook)
 
 //CREATING ONE
-router.get("/new-book", controller.getNewBookForm)
+router.get("/new-book", controller.getFormNewBook)
+// router.post("/new-book", controller.createNewBook)
 
-router.post("/new-book", controller.createNewBook)
 //UPDATE
+router.get("/update-book", controller.getBookToUpdate)
+router.post("/update-book", controller.updateBook)
 
 //DELETE
+router.get("/delete-book", controller.deleteBookFind)
 
+router.post("/delete-book", controller.deleteBook)
 
 
 
